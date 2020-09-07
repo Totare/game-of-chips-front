@@ -1,4 +1,6 @@
-class RoyalFlush extends Combo {
+import Combo from '../Combo.js'
+
+export default class RoyalFlush extends Combo {
   static isAvailable(cards) {
     let values = cards.map(card => card.value())
     let types = cards.map(card => card.type()).gemUniq()
